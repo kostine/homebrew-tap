@@ -11,7 +11,7 @@ class Kbd < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/kostine/kbd/releases/download/v0.1.0/kbd_0.1.0_darwin_amd64.tar.gz"
-      sha256 "4e77a435b33c1d441795d16e7f7d8a5243629f4a8e115e476b292ee8462b9456"
+      sha256 "377dbb6fd81c034bd7046d520d0ce5102c57752a50beb8427306be5fba9ab899"
 
       define_method(:install) do
         bin.install "kbd"
@@ -19,7 +19,7 @@ class Kbd < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/kostine/kbd/releases/download/v0.1.0/kbd_0.1.0_darwin_arm64.tar.gz"
-      sha256 "e4eaad685ce6b1ae7eef05058655bd8b1a24ac700273640cd98c0494c2c542a8"
+      sha256 "4100a7bffad26fba3bc767c8968c7c22a98cbeb316b9c6d211632989e631a5ab"
 
       define_method(:install) do
         bin.install "kbd"
@@ -30,14 +30,14 @@ class Kbd < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/kostine/kbd/releases/download/v0.1.0/kbd_0.1.0_linux_amd64.tar.gz"
-      sha256 "dd686bcc6237ed15176cc6128fd429285862f8d38283932a0f637cff33800502"
+      sha256 "10d853dce8f86ba2b5e2ed1e5afc9cb337c0105aed12fb379209adc09b43ed6c"
       define_method(:install) do
         bin.install "kbd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kostine/kbd/releases/download/v0.1.0/kbd_0.1.0_linux_arm64.tar.gz"
-      sha256 "1f08921990e090a9a131ed1bf0a22181dfc1ecb85b0900e5f572d3a75f96dacd"
+      sha256 "02f8e91e5e9c613e80b7d8ff9c3a9aea3b205edbbe8a06bc2e47cddd429bcf67"
       define_method(:install) do
         bin.install "kbd"
       end
